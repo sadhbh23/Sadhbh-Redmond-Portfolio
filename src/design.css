@@ -8,7 +8,7 @@ font-family: 'Space Grotesk', sans-serif;
   --secondary-color: #393e46;
   --tertiary-color: #fcda05;
   --background-color: #faf9f0;
-  --button-hover-color: #e9c904;
+  --button-hover-color: #fff;
 }
 
 h1,
@@ -41,21 +41,26 @@ p {
 }
 
 .hero {
-  background-color: var(--background-color);
+  background: radial-gradient(
+    circle at 3% 4.8%,
+    rgb(169, 224, 127) 0%,
+    rgb(248, 247, 121) 86.6%
+  );
+  /*background-color: var(--background-color); */
   padding: 100px;
   text-align: center;
 }
 
 .primary-button {
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-
+  color: var(--background-color);
+  background-color: var(--primary-color);
   margin-top: 40px;
   padding: 10px 15px;
 }
 
 .primary-button:hover {
+  color: var(--background-color);
   cursor: pointer;
-  background-color: var(--button-hover-color);
+  background-color: var(--secondary-color);
   transition: all 200 ease-in-out;
 }
