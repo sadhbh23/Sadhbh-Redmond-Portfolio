@@ -1,11 +1,61 @@
 /*font-family: 'Barlow', sans-serif;
-font-family: 'Rajdhani', sans-serif; */
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+ */
 
-h1 {
+:root {
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --tertiary-color: #fcda05;
+  --background-color: #faf9f0;
+  --button-hover-color: #e9c904;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
 }
 
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
 p {
+  color: var(--secondary-color);
   font-family: "Barlow", sans-serif;
+}
+
+.hero p {
+  margin: 35px 80px 0px;
+}
+
+.hero {
+  background-color: var(--background-color);
+  padding: 100px;
+  text-align: center;
+}
+
+.primary-button {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+
+  margin-top: 40px;
+  padding: 10px 15px;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-color);
+  transition: all 200 ease-in-out;
 }
