@@ -36,6 +36,11 @@ h2 {
   font-size: 50px;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 h4 {
   font-size: 25px;
   margin: 40px 30px;
@@ -68,10 +73,26 @@ p {
   padding: 0px 30px;
 }
 
+.about-section {
+  padding: 100px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
 .project-image {
   border: 1px solid #fff;
   box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.3);
   padding: 20px;
+}
+
+.headshot-image {
+  max-width: 100%;
 }
 
 .project-description {
@@ -135,5 +156,14 @@ p {
 
   .project-description h2 {
     font-size: 35px;
+  }
+
+  .about-section {
+    padding: 0;
+    text-align: center;
+  }
+
+  .headshot-image {
+    max-width: 65%;
   }
 }
