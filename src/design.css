@@ -73,16 +73,27 @@ p {
   padding: 0px 30px;
 }
 
-.about-section {
+.primary-section {
   padding: 100px;
 }
 
-.about-section h1 {
+.primary-section h1 {
   font-size: 64px;
 }
 
-.about-section-content {
+.primary-section-content {
   margin: 30px;
+}
+
+.primary-section-content h3 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 4%;
+}
+
+.primary-section-content p {
+  font-family: var(--body-font);
 }
 
 .project-image {
