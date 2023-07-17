@@ -50,6 +50,7 @@ h4 {
 p {
   color: var(--secondary-color);
   font-family: var(--body-font);
+  font-size: 20px;
 }
 
 nav {
@@ -213,6 +214,15 @@ footer .social-links a:hover {
 footer .primary-button {
   position: relative;
   top: 15px;
+}
+
+footer .footer-author {
+  margin: 30px 0;
+  text-align: center;
+}
+
+footer .author-link {
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 992px) {
