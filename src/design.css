@@ -6,12 +6,12 @@ font-family: 'Space Grotesk', sans-serif;
 :root {
   --primary-color: #222831;
   --secondary-color: #393e46;
-  --tertiary-color: #fcda05;
+  --tertiary-color: #a9e07f;
   --background-color: #faf9f0;
   --primary-gradient: radial-gradient(
     circle at 3% 4.8%,
-    rgb(169, 224, 127) 0%,
-    rgb(248, 247, 121) 86.6%
+    #a9e07f 0%,
+    #f8f779 86.6%
   );
   --heading-font: "Rajdhani", sans-serif;
   --body-font: "Barlow", sans-serif;
@@ -50,6 +50,32 @@ h4 {
 p {
   color: var(--secondary-color);
   font-family: var(--body-font);
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+nav a {
+  color: var(--primary-color);
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--tertiary-color);
 }
 
 .hero h2 {
@@ -132,6 +158,7 @@ p {
 @media (max-width: 992px) {
   h1 {
     font-size: 65px;
+    text-align: center;
   }
 
   h4 {
@@ -157,8 +184,16 @@ p {
     margin-top: 25px;
   }
 
+  .primary-section {
+    padding: 0 10px;
+  }
+
+  .primary-section-content {
+    text-align: center;
+  }
+
   .container {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
   }
 
   .project-description {
@@ -175,6 +210,9 @@ p {
   }
 
   .headshot-image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     max-width: 65%;
   }
 }
