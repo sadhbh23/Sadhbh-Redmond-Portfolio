@@ -33,7 +33,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 30px;
 }
 
 h3 {
@@ -41,9 +43,11 @@ h3 {
   font-size: 18px;
 }
 
-h4 {
+h3.project-section-overview {
   font-size: 25px;
+  font-weight: 500;
   margin: 40px 30px;
+  opacity: 0.7;
   text-align: center;
 }
 
@@ -57,40 +61,16 @@ nav {
   padding: 20px 0;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-}
-
 nav a {
-  color: var(--primary-color);
   margin-left: 20px;
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
-}
-
-nav li.active a,
-nav a:hover {
-  color: var(--tertiary-color);
 }
 
 footer {
   margin: 20px 0 40px;
 }
 
-.hero h2 {
-  color: var(--secondary-color);
-  font-weight: 600;
-  font-size: 30px;
-}
-
 .hero p {
-  margin: 35px 80px 0px;
+  margin: 35px 300px 0px;
 }
 
 .hero {
@@ -174,7 +154,7 @@ footer .contact-box {
   max-width: 90%;
 }
 
-footer .contact-box h5 {
+footer .contact-box h3 {
   font-family: var(--heading-font);
   font-size: 48px;
   font-weight: 700;
@@ -231,10 +211,8 @@ footer .author-link {
     text-align: center;
   }
 
-  h4 {
+  h3.project-section-overview {
     font-size: 20px;
-    margin: 30px 30px;
-    text-align: center;
   }
 
   .hero {
@@ -243,7 +221,6 @@ footer .author-link {
 
   .hero h2 {
     font-size: 25px;
-    opacity: 0.8;
   }
 
   .hero p {
@@ -260,10 +237,6 @@ footer .author-link {
 
   .primary-section-content {
     text-align: center;
-  }
-
-  .container {
-    /*margin-top: 30px;*/
   }
 
   .project-description {
@@ -294,7 +267,7 @@ footer .author-link {
     max-width: 100%;
   }
 
-  footer .contact-box h5 {
+  footer .contact-box h3 {
     font-size: 18px;
   }
 
