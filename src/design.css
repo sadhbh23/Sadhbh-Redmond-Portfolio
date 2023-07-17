@@ -78,6 +78,10 @@ nav a:hover {
   color: var(--tertiary-color);
 }
 
+footer {
+  margin: 20px 0 40px;
+}
+
 .hero h2 {
   color: var(--secondary-color);
   font-weight: 600;
@@ -155,6 +159,50 @@ nav a:hover {
   transition: all 200 ease-in-out;
 }
 
+footer .contact-box {
+  background: var(--tertiary-color);
+  border-radius: 10px;
+  padding: 30px 120px;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+footer .contact-box h5 {
+  font-family: var(--heading-font);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  background: var(--primary-gradient);
+  border-radius: 30px;
+  color: var(--primary-color);
+  font-size: 35px;
+  margin: 10px 10px 0;
+  padding: 0 10px;
+  transition: all 200ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 65px;
@@ -214,5 +262,15 @@ nav a:hover {
     justify-content: center;
     margin: 0 auto;
     max-width: 65%;
+  }
+
+  footer .contact-box {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  footer .contact-box h5 {
+    font-size: 18px;
   }
 }
