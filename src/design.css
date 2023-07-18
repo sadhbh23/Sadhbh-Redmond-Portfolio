@@ -119,7 +119,7 @@ footer {
 }
 
 .headshot-image {
-  max-width: 100%;
+  max-width: 575px;
 }
 
 .project-description {
@@ -259,6 +259,11 @@ footer .author-link {
     margin-top: 10px;
     margin-bottom: 20px;
     max-width: 65%;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
   }
 
   footer .contact-box {
