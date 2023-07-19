@@ -1,7 +1,11 @@
 user-agent: *
 Disallow: /images/headshot.jpg
+Disallow: /images/headshot.webp
 Disallow: /images/hobbypage.jpeg
 Disallow: /images/hobbypage.png
+Disallow: /images/hobbypage.webp
 Disallow: /images/portfolio.png
+Disallow: /images/portfolio.webp
 Disallow: /images/weatherapp.jpeg
 Disallow: /images/weatherapp.png
+Disallow: /images/weatherapp.webp
