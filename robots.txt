@@ -1,0 +1,7 @@
+user-agent: *
+Disallow: /images/headshot.jpg
+Disallow: /images/hobbypage.jpeg
+Disallow: /images/hobbypage.png
+Disallow: /images/portfolio.png
+Disallow: /images/weatherapp.jpeg
+Disallow: /images/weatherapp.png
