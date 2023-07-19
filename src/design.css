@@ -7,7 +7,6 @@ font-family: 'Space Grotesk', sans-serif;
   --primary-color: #2b3035;
   --secondary-color: #393e46;
   --tertiary-color: #d8ee7b;
-  --background-color: #faf9f0;
   --primary-gradient: radial-gradient(
     circle at 3% 4.8%,
     #a9e07f 0%,
@@ -34,7 +33,6 @@ h1 {
 
 h2 {
   color: var(--secondary-color);
-  font-weight: 600;
   font-size: 30px;
 }
 
@@ -43,7 +41,7 @@ h3 {
   font-size: 18px;
 }
 
-h3.project-section-overview {
+h3.index-project-overview-title {
   font-size: 25px;
   font-weight: 500;
   margin: 40px 30px;
@@ -69,83 +67,6 @@ footer {
   margin: 20px 0 40px;
 }
 
-.hero p {
-  margin: 35px 300px 0px;
-}
-
-.hero {
-  background: var(--primary-gradient);
-  /*background-color: var(--background-color); */
-  padding: 100px;
-  text-align: center;
-}
-
-.container {
-  padding: 0px 30px;
-}
-
-.primary-section {
-  padding: 100px;
-}
-
-.primary-section-content {
-  margin: 30px;
-}
-
-.primary-section h1 {
-  font-size: 64px;
-}
-
-.primary-section-content h3 {
-  font-family: var(--heading-font);
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 4%;
-}
-
-.primary-section-content p {
-  font-family: var(--body-font);
-}
-
-.project-image {
-  border: 1px solid #fff;
-  box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.3);
-  padding: 20px;
-  transition: all 150ms ease-in-out;
-}
-
-.project-image:hover {
-  transform: scale(103%);
-}
-
-.headshot-image {
-  max-width: 575px;
-}
-
-.project-description {
-  padding: 0px 20px;
-}
-
-.primary-button {
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
-  font-family: var(--body-font);
-  font-size: 18px;
-  padding: 15px 30px;
-}
-
-.hero .primary-button {
-  margin-top: 60px;
-}
-
-.primary-button:hover {
-  color: var(--background-color);
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  transition: all 200 ease-in-out;
-}
-
 footer .contact-box {
   background: var(--tertiary-color);
   border-radius: 10px;
@@ -164,8 +85,13 @@ footer .contact-box p {
   margin: 0;
 }
 
-footer .email-link {
+footer .author-link,
+footer .email-link,
+footer .social-links a {
   color: var(--primary-color);
+}
+
+footer .email-link {
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -178,7 +104,6 @@ footer .email-link:hover {
 footer .social-links a {
   background: var(--tertiary-color);
   border-radius: 30px;
-  color: var(--primary-color);
   font-size: 35px;
   margin: 10px 10px 0;
   padding: 0 10px;
@@ -201,8 +126,80 @@ footer .footer-author {
   text-align: center;
 }
 
-footer .author-link {
-  color: var(--primary-color);
+.hero p {
+  margin: 35px 300px 0px;
+}
+
+.hero {
+  background: var(--primary-gradient);
+  padding: 100px;
+  text-align: center;
+}
+
+.container {
+  padding: 0px 30px;
+}
+
+.primary-section {
+  padding: 70px;
+}
+
+.primary-section h1 {
+  font-size: 64px;
+}
+
+.primary-section-content {
+  margin: 30px;
+}
+
+.primary-section-content h3 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 4%;
+}
+
+.project-image {
+  border: 1px solid #fff;
+  box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(103%);
+}
+
+.project-title {
+  margin-top: 20px;
+}
+
+.headshot-image {
+  max-width: 575px;
+}
+
+.project-description {
+  padding: 0px 20px;
+}
+
+.primary-button {
+  color: #fff;
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+  font-family: var(--body-font);
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.primary-button:hover {
+  color: var(--background-color);
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: all 200 ease-in-out;
+}
+
+.hero .primary-button {
+  margin-top: 60px;
 }
 
 @media (max-width: 992px) {
@@ -211,8 +208,28 @@ footer .author-link {
     text-align: center;
   }
 
-  h3.project-section-overview {
+  h3.index-project-overview-title {
     font-size: 20px;
+  }
+
+  footer .contact-box {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  footer .contact-box h3 {
+    font-size: 18px;
+  }
+
+  footer .primary-button {
+    font-size: 14px;
+    padding: 10px 15px;
+    position: initial;
+  }
+
+  footer p {
+    font-size: 14px;
   }
 
   .hero {
@@ -235,10 +252,7 @@ footer .author-link {
     padding: 0 5px;
   }
 
-  .primary-section-content {
-    text-align: center;
-  }
-
+  .primary-section-content,
   .project-description {
     text-align: center;
   }
@@ -250,6 +264,10 @@ footer .author-link {
   .about-section {
     padding: 0;
     text-align: center;
+  }
+
+  .project-image {
+    padding: 10px;
   }
 
   .headshot-image {
@@ -264,25 +282,5 @@ footer .author-link {
   .skills-list {
     list-style: none;
     padding: 0;
-  }
-
-  footer .contact-box {
-    padding: 30px;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  footer .contact-box h3 {
-    font-size: 18px;
-  }
-
-  footer .primary-button {
-    font-size: 14px;
-    padding: 10px 15px;
-    position: initial;
-  }
-
-  footer p {
-    font-size: 14px;
   }
 }
