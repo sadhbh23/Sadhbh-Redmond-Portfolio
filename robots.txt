@@ -9,3 +9,7 @@ Disallow: /images/portfolio.webp
 Disallow: /images/weatherapp.jpeg
 Disallow: /images/weatherapp.png
 Disallow: /images/weatherapp.webp
+
+Disallow: /about.html
+Disallow: /work.html
+Disallow: /contact.html
